@@ -1,0 +1,108 @@
+.nav_ul_container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  background: transparent;
+  color: white;
+}
+.nav_li_nftmarketplacetitle_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  list-style: none;
+}
+.nav_div_nftmarketplacetitle {
+  font: bold;
+  margin-left: 2px;
+  font-size: x-large;
+}
+
+.nav_ul_menu_container {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font: bold;
+  font-size: large;
+}
+.nav_li_here {
+  padding: 2px;
+  list-style: none;
+  margin-right: 75px;
+}
+
+.nav_button_connect {
+  background-color: #e66465;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+.nav_button_connect:hover {
+  background-color: rgb(168 85 247);
+}
+
+
+
+
+
+@media screen and (max-width: 1700px) {
+  .nav_ul_container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: transparent;
+    color: white;
+  }
+  .nav_li_nftmarketplacetitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    list-style: none;
+  }
+  .nav_div_nftmarketplacetitle {
+    font: bold;
+    margin-left: 2px;
+    font-size: x-large;
+    display: none;
+  }
+  
+  .nav_ul_menu_container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bold;
+    font-size: large;
+  }
+  .nav_li_here {
+    padding: 2px;
+    list-style: none;
+    margin-right: 15px;
+  }
+  
+  .nav_button_connect {
+    background-color: #e66465;
+    color: white;
+    font-weight: bold;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+  }
+  .nav_button_connect:hover {
+    background-color: rgb(168 85 247);
+  }
+}
