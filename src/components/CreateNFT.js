@@ -64,11 +64,13 @@ export default function CreateNFT () {
 
     async function listNFT(e) {
         e.preventDefault();
-
+        let button = document.querySelector('.create_button_listnft');
+        button.disabled = true;
         //Upload data to IPFS
         try {
             //Upload the image to IPFS
             const imageURL = await uploadImageToIPFS(formParams.image);
+            console.log(imageURL)
             //Upload the metadata to IPFS
             const metadataURL = await uploadMetadataToIPFS(imageURL);
             //After adding your Hardhat network to your metamask, this code will get providers and signers
@@ -85,7 +87,7 @@ export default function CreateNFT () {
             alert("Successfully create your NFT!");
             updateMessage("");
             updateFormParams({ name: '', description: '', image: []});
-            window.location.replace("/")
+            window.location.replace("/profile")
         }
         catch(e) {
             alert( "Upload error"+e )

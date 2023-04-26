@@ -77,7 +77,7 @@ export default function Profile () {
                         </div>
                         <div className="profile_totalvalue_container">
                             <h2>Total Value</h2>
-                            {totalPrice} ETH
+                            {totalPrice} MATIC
                         </div>
                 </div>
                 <div className="profile_nft_container">

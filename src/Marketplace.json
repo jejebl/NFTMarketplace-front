@@ -1,4 +1,4 @@
-{"address":"0x203C7Fe67487130D08F98383F881252742862F23","abi": [
+{"address":"0x1B24c3c670D01119F2cF418247c5987F38C20E44","abi": [
   {
     "inputs": [],
     "stateMutability": "nonpayable",
@@ -257,19 +257,6 @@
         "internalType": "struct NFTMarketplace.NFT",
         "name": "",
         "type": "tuple"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "getListPrice",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -590,19 +577,6 @@
       }
     ],
     "name": "updateForSale",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_listPrice",
-        "type": "uint256"
-      }
-    ],
-    "name": "updateListPrice",
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"

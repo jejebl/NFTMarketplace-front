@@ -13,7 +13,7 @@ function NFTFile (data) {
                 </div>
                 <div className= "nftfile_description_container">
                     <p>{data.data.name}</p>
-                    {data.data.forSale ? <p>{data.data.price} Eth</p> : <p>Not for Sale</p>}
+                    {data.data.forSale ? <p>{data.data.price} Matic</p> : <p>Not for Sale</p>}
                 </div>
             </div>
         </Link>

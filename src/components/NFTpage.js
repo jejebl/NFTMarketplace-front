@@ -44,6 +44,8 @@ async function getNFTData(tokenId) {
 }
 
 async function buyNFT(tokenId) {
+    let button = document.querySelector('.nftpage_button');
+    button.disabled = true;
     try {
         const ethers = require("ethers");
         //After adding your Hardhat network to your metamask, this code will get providers and signers
@@ -61,14 +63,18 @@ async function buyNFT(tokenId) {
 
         alert('You successfully bought the NFT!');
         updateMessage("");
+        window.location.replace("/profile")
     }
     catch(e) {
-        alert("Upload Error"+e)
+        alert("Upload Error"+e);
+        button.disabled = false;
     }
 }
 
 async function putOnSale(tokenId,e) {
     e.preventDefault();
+    let button = document.querySelector('.nftpage_button');
+    button.disabled = true;
     try {
         const ethers = require("ethers");
         //After adding your Hardhat network to your metamask, this code will get providers and signers
@@ -87,15 +93,18 @@ async function putOnSale(tokenId,e) {
         alert('You successfully put your NFT on sale!');
         updateMessage("");
         updatePriceInput();
-        window.location.replace("/")
+        window.location.replace("/NFTMarketplace-front")
         
     } catch (error) {
         alert( "Upload error"+ error )
+        button.disabled = false;
     }
 }
 
 async function removeFromSale(tokenId,e) {
     e.preventDefault();
+    let button = document.querySelector('.nftpage_button');
+    button.disabled = true;
     try {
         const ethers = require("ethers");
         //After adding your Hardhat network to your metamask, this code will get providers and signers
@@ -111,10 +120,11 @@ async function removeFromSale(tokenId,e) {
 
         alert('You successfully remove your NFT from sale!');
         updateMessage("");
-        window.location.replace("/")
+        window.location.replace("/NFTMarketplace-front")
         
     } catch (error) {
         alert( "Upload error"+ error )
+        button.disabled = false;
     }
 }
 
@@ -134,7 +144,7 @@ if(!dataFetched)
                         <div className="nftpage_description_container">
                             <p>Name:</p>{data.name}<br></br><br></br>
                             <p>Description:</p> {data.description}<br></br><br></br>
-                            <p>Price:</p> {data.price + " ETH"}<br></br><br></br>
+                            <p>Price:</p> {data.price + " MATIC"}<br></br><br></br>
                             <p>Owner:</p> <div className='nftpage_description_addressowner'>{data.owner}</div>
                         </div>
                     </div>
@@ -149,8 +159,8 @@ if(!dataFetched)
                             <div className="nftpage_container_putonsale">
                                 <p>Put this NFT on sale here:</p>
                                 <div className="nftpage_price_container">
-                                    <label className="nftpage_label_price" htmlFor="price">Price (in ETH)</label>
-                                    <input className="nftpage_input" type="number" placeholder="Min 0.01 ETH" value={priceInput} onChange={e => updatePriceInput(e.target.value)}></input>
+                                    <label className="nftpage_label_price" htmlFor="price">Price in MATIC</label>
+                                    <input className="nftpage_input" type="number" placeholder="Min 0.01 MATIC" value={priceInput} onChange={e => updatePriceInput(e.target.value)}></input>
                                 </div>
                                 <button className='nftpage_button' onClick={(e) => putOnSale(tokenId,e)}>Put on sale</button>
                             </div>
