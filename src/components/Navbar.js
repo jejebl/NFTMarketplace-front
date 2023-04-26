@@ -43,7 +43,7 @@ function Navbar() {
     } else {
       setDefaultAccount(false);
     }
-    window.location.replace("/")
+    window.location.replace("/NFTMarketplace-front")
   }
 
     return (
