@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/NFTMarketplace-front/static/css/main.2dc855ee.css",
-    "main.js": "/NFTMarketplace-front/static/js/main.12a2a32e.js",
+    "main.js": "/NFTMarketplace-front/static/js/main.c48489c9.js",
     "index.html": "/NFTMarketplace-front/index.html",
     "main.2dc855ee.css.map": "/NFTMarketplace-front/static/css/main.2dc855ee.css.map",
-    "main.12a2a32e.js.map": "/NFTMarketplace-front/static/js/main.12a2a32e.js.map"
+    "main.c48489c9.js.map": "/NFTMarketplace-front/static/js/main.c48489c9.js.map"
   },
   "entrypoints": [
     "static/css/main.2dc855ee.css",
-    "static/js/main.12a2a32e.js"
+    "static/js/main.c48489c9.js"
   ]
 }
