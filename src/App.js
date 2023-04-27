@@ -14,10 +14,10 @@ function App() {
     <div className='container'>
       <Navbar />
           <Routes>
-            <Route path="/" element={<Marketplace />}/>
-            <Route path="#/nftPage/:tokenId" element={<NFTPage />}/>        
-            <Route path="#/profile" element={<Profile />}/>
-            <Route path="#/createNFT" element={<CreateNFT />}/>             
+            <Route exact path="/" element={<Marketplace />}/>
+            <Route path="/nftPage/:tokenId" element={<NFTPage />}/>        
+            <Route path="/profile" element={<Profile />}/>
+            <Route path="/createNFT" element={<CreateNFT />}/>             
           </Routes>
     </div>
   );
