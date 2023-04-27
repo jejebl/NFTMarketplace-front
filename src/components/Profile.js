@@ -44,10 +44,10 @@ export default function Profile () {
             let item = {
                 price,
                 tokenId: i.tokenId.toNumber(),
-                seller: i.seller,
                 owner: i.owner,
                 image: meta.image,
                 name: meta.name,
+                forSale: i.forSale,
                 description: meta.description,
             }
             sumPrice += Number(price);
