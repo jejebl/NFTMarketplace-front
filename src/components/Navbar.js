@@ -65,12 +65,12 @@ function Navbar() {
             )}
             {defaultAccount && (
                 <li className='nav_li_here'>
-                  <Link to="/NFTMarketplace-front/createNFT">Create NFT</Link>
+                  <Link to="/NFTMarketplace-front#/createNFT">Create NFT</Link>
                 </li> 
             )} 
             {defaultAccount && (         
                 <li className='nav_li_here'>
-                  <Link to="/NFTMarketplace-front/profile">My Profile</Link>
+                  <Link to="/NFTMarketplace-front#/profile">My Profile</Link>
                 </li> 
             )} 
             {!defaultAccount && (
