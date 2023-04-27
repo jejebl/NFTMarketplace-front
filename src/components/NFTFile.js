@@ -3,7 +3,7 @@ import './NFTFile.css';
 
 function NFTFile (data) {
     const newTo = {
-        pathname:"/NFTMarketplace-front#/nftPage/"+data.data.tokenId
+        pathname:"#/nftPage/"+data.data.tokenId
     }
     return (
         <Link to={newTo}>

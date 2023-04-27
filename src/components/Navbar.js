@@ -43,13 +43,13 @@ function Navbar() {
     } else {
       setDefaultAccount(false);
     }
-    window.location.replace("/NFTMarketplace-front")
+    window.location.replace("/")
   }
 
     return (
           <ul className='nav_ul_container'>
             <li className='nav_li_nftmarketplacetitle_container'>
-              <Link to="/NFTMarketplace-front">
+              <Link to="/">
               <div className='nav_div_nftmarketplacetitle'>
                 NFT Marketplace
               </div>
@@ -60,17 +60,17 @@ function Navbar() {
                 
             {defaultAccount && (
                 <li className='nav_li_here'>
-                  <Link to="/NFTMarketplace-front">Marketplace</Link>
+                  <Link to="/">Marketplace</Link>
                 </li>
             )}
             {defaultAccount && (
                 <li className='nav_li_here'>
-                  <Link to="/NFTMarketplace-front#/createNFT">Create NFT</Link>
+                  <Link to="#/createNFT">Create NFT</Link>
                 </li> 
             )} 
             {defaultAccount && (         
                 <li className='nav_li_here'>
-                  <Link to="/NFTMarketplace-front#/profile">My Profile</Link>
+                  <Link to="#/profile">My Profile</Link>
                 </li> 
             )} 
             {!defaultAccount && (
