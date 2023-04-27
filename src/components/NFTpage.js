@@ -63,7 +63,7 @@ async function buyNFT(tokenId) {
 
         alert('You successfully bought the NFT!');
         updateMessage("");
-        window.location.replace("#/profile")
+        window.location.replace("/profile")
     }
     catch(e) {
         alert("Upload Error"+e);
