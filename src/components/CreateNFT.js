@@ -16,7 +16,7 @@ export default function CreateNFT () {
         //Make sure that none of the fields are empty
         if( !name || !description || !image) {
             alert("A field is missing!");
-            window.location.replace("/createNFT")
+            window.location.replace("/NFTMarketplace-front/#/createNFT")
             return;
         }
         //check for file extension
@@ -30,7 +30,7 @@ export default function CreateNFT () {
         }
         catch(e) {
             console.log("Error during file upload", e);
-            window.location.replace("/createNFT")
+            window.location.replace("/NFTMarketplace-front/#/createNFT")
         }
     }
 
@@ -40,7 +40,7 @@ export default function CreateNFT () {
         
         //Make sure that none of the fields are empty
         if( !name || !description || !imageURL) {
-            window.location.replace("/createNFT")
+            window.location.replace("/NFTMarketplace-front/#/createNFT")
             return;
         }
 
@@ -58,7 +58,7 @@ export default function CreateNFT () {
         }
         catch(e) {
             console.log("error uploading JSON metadata:", e)
-            window.location.replace("/createNFT")
+            window.location.replace("/NFTMarketplace-front/#/createNFT")
         }
     }
 
@@ -87,11 +87,11 @@ export default function CreateNFT () {
             alert("Successfully create your NFT!");
             updateMessage("");
             updateFormParams({ name: '', description: '', image: []});
-            window.location.replace("/profile")
+            window.location.replace("/NFTMarketplace-front/#/profile")
         }
         catch(e) {
             alert( "Upload error"+e )
-            window.location.replace("/createNFT")
+            window.location.replace("/NFTMarketplace-front/#/createNFT")
         }
     }
 

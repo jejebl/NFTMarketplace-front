@@ -63,7 +63,7 @@ async function buyNFT(tokenId) {
 
         alert('You successfully bought the NFT!');
         updateMessage("");
-        window.location.replace("/profile")
+        window.location.replace("/NFTMarketplace-front/#/profile")
     }
     catch(e) {
         alert("Upload Error"+e);
@@ -93,7 +93,7 @@ async function putOnSale(tokenId,e) {
         alert('You successfully put your NFT on sale!');
         updateMessage("");
         updatePriceInput();
-        window.location.replace("/")
+        window.location.replace("/NFTMarketplace-front")
         
     } catch (error) {
         alert( "Upload error"+ error )
@@ -120,7 +120,7 @@ async function removeFromSale(tokenId,e) {
 
         alert('You successfully remove your NFT from sale!');
         updateMessage("");
-        window.location.replace("/")
+        window.location.replace("/NFTMarketplace-front")
         
     } catch (error) {
         alert( "Upload error"+ error )
