@@ -16,7 +16,6 @@ function App() {
       <Navbar />
         <HashRouter>
           <Routes>
-            <Route path="*" element={<Marketplace/>}></Route>
             <Route path="/NFTMarketplace-front" element={<Marketplace />}/>
             <Route path="/NFTMarketplace-front#/nftPage/:tokenId" element={<NFTPage />}/>        
             <Route path="/NFTMarketplace-front#/profile" element={<Profile />}/>
