@@ -49,7 +49,7 @@ function Navbar() {
     return (
           <ul className='nav_ul_container'>
             <li className='nav_li_nftmarketplacetitle_container'>
-              <Link to="/">
+              <Link to="/NFTMarketplace-front">
               <div className='nav_div_nftmarketplacetitle'>
                 NFT Marketplace
               </div>
@@ -65,12 +65,12 @@ function Navbar() {
             )}
             {defaultAccount && (
                 <li className='nav_li_here'>
-                  <Link to="/createNFT">Create NFT</Link>
+                  <Link to="/NFTMarketplace-front/createNFT">Create NFT</Link>
                 </li> 
             )} 
             {defaultAccount && (         
                 <li className='nav_li_here'>
-                  <Link to="/profile">My Profile</Link>
+                  <Link to="/NFTMarketplace-front/profile">My Profile</Link>
                 </li> 
             )} 
             {!defaultAccount && (
